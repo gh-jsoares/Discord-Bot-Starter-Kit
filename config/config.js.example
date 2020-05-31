@@ -1,0 +1,4 @@
+export const TOKEN = 'TOKEN';
+export const PREFIX = '?';
+export const OWNERS = [ '227152412538830848' ]; // roxie
+export const COOLDOWN = 3000;
