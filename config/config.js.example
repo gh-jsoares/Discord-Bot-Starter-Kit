@@ -2,3 +2,10 @@ export const TOKEN = 'TOKEN';
 export const PREFIX = '?';
 export const OWNERS = [ '227152412538830848' ]; // roxie
 export const COOLDOWN = 3000;
+export const DATABASE_DRIVER = 'pg';
+export const DATABASE = {
+      host : '127.0.0.1',
+      user : 'your_database_user',
+      password : 'your_database_password',
+      database : 'myapp_test'
+    };
