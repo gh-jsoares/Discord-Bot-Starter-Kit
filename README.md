@@ -4,7 +4,9 @@ It contains a simple structure for listeners and commands as well as a database 
 
 ## Get started
 To get started you can clone this repository:
+
 `git clone git@github.com:gh-jsoares/Discord-Bot-Starter-Kit.git discord-bot && cd discord-bot`
+
 Or you can press the 'Use this Template' button to create a repository with the same structure.
 ![Use this template](https://files.perpheads.com/aPAYFgyfG8kuRtxd.png)
 
