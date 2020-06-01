@@ -1,3 +1,5 @@
+import { REGULAR } from '../utils/permissions.js';
+
 export default {
         name: 'ping',
         description: 'Ping!',
@@ -5,7 +7,8 @@ export default {
         cooldown: 0,
         usage: '',
         guildOnly: false,
-        aliases: [],
+        aliases: ['peng'],
+        permission: REGULAR,
         execute(message, args) {
             message.channel.send('Pong.');
         }
