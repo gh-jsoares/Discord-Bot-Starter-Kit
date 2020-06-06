@@ -9,7 +9,10 @@ export default {
 
         if (!message.content.startsWith(PREFIX) || message.author.bot) return;
 
-        const args = message.content.slice(PREFIX.length).split(/ +/);
+        const args = message.content.slice(PREFIX.length)
+            .split(/('.*?'|".*?"|\S+)/g)
+            .filter(a => a.trim().length != 0)
+            .map(a => a.replace(/^'(.+(?='$))'$/, '$1').replace(/^"(.+(?="$))"$/, '$1'));
         const commandName = args.shift().toLowerCase();
 
         const command = client.commands.get(commandName)
